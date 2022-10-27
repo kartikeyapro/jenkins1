@@ -23,5 +23,10 @@ node {
 	bat '''mvn package'''
        
     }
+	stage('maven deployment') {
+	bat '''mvn deployment'''
+       
+    }
+    
     
 }
