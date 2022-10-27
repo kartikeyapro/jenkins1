@@ -24,7 +24,7 @@ node {
        
     }
 	stage('maven deployment') {
-	bat '''mvn deployment'''
+	bat '''mvn deploy'''
        
     }
     
