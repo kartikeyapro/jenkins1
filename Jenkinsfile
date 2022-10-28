@@ -3,6 +3,10 @@ node {
 	git credentialsId: 'ksgit', url: 'https://github.com/kartikeyapro/ks.git'
        
     }
+	stage('maven version') {
+	bat '''mvn --version'''
+     
+    }
     stage('maven clean') {
 	bat '''mvn clean'''
      
