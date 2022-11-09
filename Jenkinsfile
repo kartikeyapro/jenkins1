@@ -21,12 +21,7 @@ pipeline {
 			 sh 'mvn clean'
 			}
 			}
-		stage('SonarQube Scan'){
-			steps{
-			sh 'mvn sonar:sonar -Dsonar.host.url=http://34.125.211.116:9000 -Dsonar.login=a942c851734b6769e63896eb0a0fc198c387f2c7'
-			}
-			}
-			
+					
 		stage('Maven Validate') {
 			steps {
 			 sh 'mvn validate'
